@@ -1,0 +1,46 @@
+{
+  "order_id": "ORD987654",
+  "customer": {
+    "name": "Aman",
+    "email": "aman@example.com",
+    "phone": "+91-9876543210",
+    "shipping_address": {
+      "street": "123, Green Street",
+      "city": "Thane",
+      "state": "Maharashtra",
+      "country": "India",
+      "postal_code": "400601"
+    }
+  },
+  "order_date": "2025-05-19",
+  "delivery_estimate": "2025-05-25",
+  "payment": {
+    "method": "Credit Card",
+    "transaction_id": "TXN123456",
+    "total_amount": 6599.99,
+    "currency": "INR",
+    "status": "Paid"
+  },
+  "items": [
+    {
+      "product_id": "PROD001",
+      "name": "Wireless Headphones",
+      "quantity": 1,
+      "price": 3499.99,
+      "total_price": 3499.99
+    },
+    {
+      "product_id": "PROD002",
+      "name": "Smartwatch",
+      "quantity": 1,
+      "price": 3100.00,
+      "total_price": 3100.00
+    }
+  ],
+  "order_status": "Shipped",
+  "tracking_info": {
+    "courier": "MockExpress",
+    "tracking_number": "TRACK123456",
+    "status": "In Transit"
+  }
+}

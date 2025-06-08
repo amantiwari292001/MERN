@@ -1,0 +1,13 @@
+In Git Bash:
+pwd: helps you to know about your current location. pwd = print working directory.
+cd: helps to navigate between folders. "cd folderName" to get inside, "cd .." to get outside a folder. cd = change directory.
+ls: helps to know the number and names of files your current folder has. ls = list.
+mkdir: helps to create a folder, "mkdir folderName". mkdir = make directory.
+touch: helps to create a new file in the folder, "touch new.txt".
+rm: helps to delete a file, "rm fileName".
+cat: helps in getting the content of a file. "cat fileName".
+vi: helps in editing a file in terminal. "vi fileName", use i to insert text, Esc > :w to save and Esc > :q! to exit. vi = vim.
+mv: helps in moving a file. "mv Week_2/bash-commands.txt Week_1". mv = move.
+cp: helps in copying a file/folder. "cp Week_2/server.js Week_1". cp = copy.
+node: just typing node will givr you an environment to run js in terminal. But with "node fileName" will execute a file.
+npm: it helps in getting the dependencies and libraries from npm registry. "npm install libraryName".
