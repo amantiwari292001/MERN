@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        async function calc(){
+            let num1 = document.getElementById('num1').value; //We get HTML elements with the help of their attributes and process them.
+            let num2 = document.getElementById('num2').value;
+            let sum = Number(num1) + Number(num2);
+            let sol = document.getElementById('sol');
+            sol.innerText = `The sum of ${num1} and ${num2} is ${sum}.`;
+        }
+    </script>
+  </head>
+  <body>
+      Num1: <input id="num1"></input><br /><br />
+      Num2: <input id="num2"></input><br /><br />
+      <button type="submit" onclick="calc()">Button</button>
+      <h3 id="sol"></h3>
+  </body>
+</html>
