@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TO-DO</title>
+    <script>
+        /*
+        document.createElement('tag name');
+        docuemnt.appendChild(element);
+        docuemnt.setAttribute(name, value);
+        */
+       function taskDone(taskNumber){
+        let buttonText = document.getElementById(`${taskNumber}`);
+        buttonText.innerHTML = 'Done';
+       }
+
+       let taskNumber = 1;
+        function addTask(){
+            //Getting input values.
+            let title = document.getElementById('title').value;
+            let description = document.getElementById('description').value;
+
+            //Create a task element to store details.
+            let task = document.createElement('div');
+            task.setAttribute('id', `task${taskNumber}`);
+            taskNumber++;
+
+            //Create tags for title, description and button
+            let titleDiv = document.createElement('div');
+            titleDiv.innerHTML = title;
+            let descriptionDiv = document.createElement('div');
+            descriptionDiv.innerHTML = description;
+            let buttonDiv = document.createElement('button');
+            buttonDiv.innerHTML = 'Completed';
+
+            //Setting attribute to button and giving the id of current elemnt in taskDone function.
+            buttonDiv.setAttribute('id', taskNumber);
+            buttonDiv.setAttribute('onclick', `taskDone(${taskNumber})`);
+
+            //Adding title,description and button under task.
+            let br = document.createElement('br');
+            task.appendChild(titleDiv);
+            task.appendChild(descriptionDiv);
+            task.appendChild(buttonDiv);
+
+            //Adding task under container.
+            let container = document.getElementById('container');
+            container.appendChild(task);
+            container.appendChild(br);
+        }
+    </script>
+</head>
+<body>
+    <h2>To-Do List:</h2>
+    <b>Title:</b> <br>
+    <input type="text" id="title"><br><br>
+    <b>Description:</b> <br>
+    <input type="text" id="description"><br><br>
+    <button id="add" onclick="addTask()"><b>Add Task</b></button><br><br>
+    <div id="container"></div>
+</body>
+</html>
