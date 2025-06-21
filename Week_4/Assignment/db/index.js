@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://aman:ai7FdKAEIZS0ArI0@myfirstdb.qdi3bbi.mongodb.net/Week4');
+mongoose.connect('mongodb+srv://aman:qwer1234.qdi3bbi.mongodb.net/Week4');
 
 //Schema
 const UserSchema = mongoose.Schema(
