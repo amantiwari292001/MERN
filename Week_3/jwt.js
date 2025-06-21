@@ -24,8 +24,9 @@ app.post('/postToken', async (req, res) => {
 
 app.get('/verifyToken', async(req,res) => {
     try{
-        const verified = jwt.verify('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGhvbmkiLCJhZ2UiOjgwLCJpYXQiOjE3NDkyNzk0NDF9.6iWo-M3ooXuejWxsMP8Ma72853abcderfFK-H9i1omCgk', '159753');//This will return you the payload., Every timestap will give us different jwt. Only the correct secrert key can verify the signature.
+        const verified = jwt.verify(req.headers.jwt, '159752');//This will return you the payload., Every timestap will give us different jwt. Only the correct secrert key can verify the signature.
         //We can use decode also, which will return us the payload without checking the authenticity.
+        //Even after changing the payload, we can't change the signature.
         res.send(verified);
     } catch(e){
         res.send('Wrong');
