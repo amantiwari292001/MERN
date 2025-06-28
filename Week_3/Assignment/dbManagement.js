@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://aman:ai7FdKAEIZS0ArI0@myfirstdb.qdi3bbi.mongodb.net/Tester");
+mongoose.connect("mongodb+srv://aman:.qdi3bbi.mongodb.net/Tester");
 const testerData = mongoose.model("Tester", {username: String, password: String});
 
 async function saveData(username, password){
