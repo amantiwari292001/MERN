@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://aman:ai7FdKAEIZS0ArI0@myfirstdb.qdi3bbi.mongodb.net/todos');
+mongoose.connect('mongodb+srv://aman:.qdi3bbi.mongodb.net/todos');
 
 const todoSchema = mongoose.Schema({
     title: String,
